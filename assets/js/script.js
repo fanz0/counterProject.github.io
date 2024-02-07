@@ -1,3 +1,24 @@
+const div = document.querySelector(".counter")
+
+// create all the elements of the counter
+const button1 = document.createElement("button")
+button1.className = "decrement"
+button1.textContent = "-"
+
+const input = document.createElement("input")
+input.type = "button"
+input.value = "0"
+
+const button2 = document.createElement("button")
+button2.className = "increment"
+button2.textContent = "+"
+
+// add them in the selected div
+div.appendChild(button1)
+div.appendChild(input)
+div.appendChild(button2)
+
+
 const decrementButton = document.querySelector('.decrement')
 const counter = document.querySelector('input')
 const incrementButton = document.querySelector('.increment')
